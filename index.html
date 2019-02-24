@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="indexcss.css">
-    <script src="indexjs.js"></script>
-    <title>Welcome</title>
+    <title>WebEdu</title>
 </head>
-<body onload="zeigeWert('hoW','ho');zeigeWert('brW','br');zeigeWert('muW','mu')">
-    <form action="indexphp.php" method="post" id="myForm">
-        Wir erstellen jetzt gemeinsam ein Feld:
-        <br>
-        Höhe: <input type="range" min="10" max="210" name="hoehe" id="hoW" onchange="zeigeWert('hoW', 'ho')">
-        <p id="ho"></p>
-        <br>
-        Breite: <input type="range" min="10" max="210" name="breite" id="brW" onchange="zeigeWert('brW','br')">
-        <p id="br"></p>
-        <br>
-        <input type="range" min="1" max="5" name="multi" id="muW" onchange="zeigeWert('muW','mu')">
-        <p id="mu"></p>
-        <button type="submit">Submit</button>
-        <button type="button" onclick="zeigeStartWert('hoW','ho','brW','br')">Reset</button>
-    </form>
+<body>
+    <h1><a href="indexphp.php">Hier</a></h1>
 </body>
 </html>

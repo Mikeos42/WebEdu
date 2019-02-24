@@ -1,19 +1,33 @@
-<style>
-    .box {
-        width: <?php echo $_POST['breite']?>;
-        height: <?php echo $_POST['hoehe']?>;
-        background-color: #ff0000;
-        transition: width 2s,height 2s, background-color 2s;
-    }
-    .box:hover {
-        width: <?php echo $_POST['breite'] * $_POST['multi']?>;
-        height: <?php echo $_POST['hoehe'] * $_POST['multi']?>;
-        background-color: #0000ff;
-    }
-</style>
-
 <?php
 
-echo "<div class='box'></div>";
 
+echo "<form action='' method='post'>";
+echo    "<input type='number' name='hoehe'>";
+echo    "<br>";
+echo    "<button type='submit' name='ok'>Submit</button>";
+echo "</form>";
+
+//-----------------------
+
+echo "<form action='' method='post'>";
+echo    "<br>";
+echo    "<button type='submit' name='again'>Reset</button>";
+echo    "<br>";
+if (isset($_POST['ok'])) {
+    echo "<style>
+        .box {
+            width: ".$_POST['hoehe'].";
+            height: ".$_POST['hoehe'].";
+            background-color: red;
+            transition: width 2s,height 2s}
+        .box:hover {
+            width: 100;
+            height: 100;
+        }
+        </style>";
+    echo "<div class='box'></div>";
+}
+echo "</form>";
+
+//-----------------------
 ?>
