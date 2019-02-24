@@ -1,6 +1,5 @@
 function zeigeWert(was, wo) {
-    var wert = document.getElementById(was).value;
-    document.getElementById(wo).innerHTML = wert;
+    document.getElementById(wo).innerHTML = document.getElementById(was).value;
 }
 function zeigeStartWert(wert1,ort1,wert2,ort2) {
     document.getElementById('myForm').reset();

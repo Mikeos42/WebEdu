@@ -6,7 +6,7 @@
     <script src="indexjs.js"></script>
     <title>Welcome</title>
 </head>
-<body onload="zeigeWert('hoW','ho');zeigeWert('brW','br')">
+<body onload="zeigeWert('hoW','ho');zeigeWert('brW','br');zeigeWert('muW','mu')">
     <form action="indexphp.php" method="post" id="myForm">
         Wir erstellen jetzt gemeinsam ein Feld:
         <br>
@@ -16,6 +16,8 @@
         Breite: <input type="range" min="10" max="210" name="breite" id="brW" onchange="zeigeWert('brW','br')">
         <p id="br"></p>
         <br>
+        <input type="range" min="1" max="5" name="multi" id="muW" onchange="zeigeWert('muW','mu')">
+        <p id="mu"></p>
         <button type="submit">Submit</button>
         <button type="button" onclick="zeigeStartWert('hoW','ho','brW','br')">Reset</button>
     </form>
