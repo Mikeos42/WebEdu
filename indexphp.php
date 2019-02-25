@@ -18,6 +18,8 @@ echo    "<br>";
 if (isset($_POST['ok'])) {
     $hoehe = $_POST['hoehe'];
     $breite = $_POST['breite'];
+    $hoehe2 = $hoehe * sqrt(2);
+    $breite2 = $breite * sqrt(2);
     echo "<style>
         .box {
             width: $hoehe;
@@ -27,8 +29,8 @@ if (isset($_POST['ok'])) {
             text-align: center;
         }
         .box:hover {
-            width: 100px;
-            height: 100px;
+            width: $breite2;
+            height: $hoehe2;
         }
         </style>";
     echo "<div class='box'><p>Height: $hoehe</p><p>Breite: $breite</p></div>";
