@@ -9,8 +9,8 @@ if ($db) {
         </form>";
 
     if (isset($_POST['ok'])) {
-        //$tb = mysqli_query($db,"FROM * SELECT ");
-        //todo hilfe, ich habe keine Ahnung wie das weitergehen soll!!
+        $sql = "SELECT * FROM benutzer";
+        mysqli_query($db, $sql);
     }
 
     echo "<form method='post' action=''>
